@@ -16,6 +16,11 @@ jobs:
     defaults:
       run:
         working-directory: ./example-app
+
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
  
     steps:
     - name: Checkout code
@@ -46,6 +51,11 @@ jobs:
     defaults:
       run:
         working-directory: ./example-app
+
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
  
     steps:
     - name: Checkout code
@@ -80,6 +90,11 @@ jobs:
       run:
         working-directory: ./example-app
  
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
+        
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -115,6 +130,11 @@ jobs:
       run:
         working-directory: ./example-app
  
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
+        
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -150,6 +170,11 @@ jobs:
        run:
           working-directory: ./example-app
  
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
+    
     steps:
  
     - name: Checkout code
