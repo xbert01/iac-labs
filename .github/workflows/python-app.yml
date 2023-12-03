@@ -24,12 +24,12 @@ jobs:
     - name: Install Poetry Action
       uses: snok/install-poetry@v1.3.4
       with:
-        version: "1.1.11"  # Set the Poetry version to v1.3.4
-        virtualenvs-create: # optional, default is true
-        virtualenvs-in-project: # optional, default is false
-        virtualenvs-path: # optional, default is {cache-dir}/virtualenvs
-        installer-parallel: # optional, default is true
-        installation-arguments: # optional
+        version: "1.1.11"  # Replace with the desired version
+        virtualenvs-create: true  # Specify a valid value, e.g., 'true'
+        virtualenvs-in-project: false  # Specify a valid value, e.g., 'false'
+        virtualenvs-path: "{cache-dir}/virtualenvs"  # Specify a valid path
+        installer-parallel: true  # Specify a valid value, e.g., 'true'
+        installation-arguments: "" 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
